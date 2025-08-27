@@ -150,7 +150,7 @@ const translations = {
       contact: "Contact",
       iamPrefix:"Je suis",
       typedText: ["Développeuse Web", "graphiste junior"],
-      featuredText: "Développeur frontend et backend passionné par la création de sites web esthétiques et fonctionnels.",
+      featuredText: "Développeuse frontend et backend, passionnée par la création de sites web à la fois esthétiques et fonctionnels.",
       aboutTitle: "À propos de moi",
       introductionTitle: "Mon introduction",
       aboutText: "Actuellement étudiant en deuxième année de Génie Logiciel, je nourris une véritable passion pour l'informatique et les nouvelles technologies. J'ai su développer des bases solides en programmation ainsi qu'en conception de pages web. Ma motivation, ma curiosité et mon désir d'apprendre me poussent à me perfectionner continuellement dans ce domaine en constante évolution. Je possède des compétences avérées en résolution de problèmes, en travail d'équipe et en adaptabilité. Je suis particulièrement enthousiaste à l'idée de contribuer à des projets innovants et de mettre en pratique les connaissances acquises au cours de mes études.", 
