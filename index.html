@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="css.css">
+    <title>Portfolio | Mame Touty BOUSSO</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+     <br>
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Bousso</p>
+            <span>!</span>
+        </div>
+          <!-- Ajoute ces boutons dans ta nav -->
+        <div class="nav-buttons">
+            <button id="theme-toggle" class="btn-icon" title="Changer de thème">
+                <i class="uil uil-moon"></i> <!-- Icône lune par défaut -->
+            </button>
+            <button id="language-toggle" class="btn-icon" title="Switch language">
+                <span>FR</span> <!-- Texte par défaut -->
+            </button>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+      
+      </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-name">
+                <span class="iam-prefix"></span><span class="typedText"></span>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced frontend and backend developer with a passion for creating visually stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn" onclick="downloadCV()">Télécharger mon CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="img1.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#contact" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3 class="introduction-title">Mon introduction</h3>
+                    <div class="animated-text">
+                        <p class="introduction-text">Ayant validé ma première année de licence en Génie Logiciel, je nourris une véritable passion pour l'informatique et les nouvelles technologies. J'ai su développer des bases solides en programmation ainsi qu'en conception de pages web. Ma motivation, ma curiosité et mon désir d'apprendre me poussent à me perfectionner continuellement dans ce domaine en constante évolution. Je possède des compétences avérées en résolution de problèmes, en travail d'équipe et en adaptabilité. Je suis particulièrement enthousiaste à l'idée de contribuer à des projets innovants et de mettre en pratique les connaissances acquises au cours de mes études.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <!-- <span>Vue</span> -->
+                        <!-- <span>React</span> -->
+                        <!-- <span>Angular</span> -->
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <!-- <span>JAVA</span> -->
+                        <span>Débute Python</span>
+                        <!-- <span>C++</span>- -->
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <!-- <span>PostgreSQL</span> -->
+                        <!-- <span>MongoDB</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>3+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>2+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>1+ Years in the field</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: mametoutybousso2104@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +221 77 874 74 21</p>
+                </div>
+             </div>
+             <div class="col">
+               <div class="form-control">
+                <form id="contact-form" >
+                    <!-- Redirection après soumission -->
+                    <input type="hidden" name="_redirect" value="merci.html">
+                  
+                    <div class="form-inputs">
+                      <input type="text" name="name" class="input-field" placeholder="Name" required>
+                      <input type="email" name="email" class="input-field" placeholder="Email" required>
+                    </div><br>
+                  
+                    <div class="text-area">
+                      <textarea name="message" placeholder="Message" required></textarea>
+                    </div><br>
+                  
+                    <div class="form-button">
+                      <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                  </form>
+                  
+               </div>
+            </div>
+          </div>
+       </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Mame Touty BOUSSO .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <!-- <div class="icon"><a href="https://www.instagram.com/ " target="_blank"><i class="uil uil-instagram" ></i></a></i></div> -->
+            <!-- <div class="icon"><a href="https://sn.linkedin.com/in/mame-touty-bousso-b3332129b" target="_blank"><i class="uil uil-linkedin-alt" ></i></a></i></div>
+            <div class="icon"><a href="https://wa.me/221778747421" target="_blank"><i class="uil uil-whatsapp" ></i></a></i></div> -->
+            <div class="icon"><a href="https://github.com/boussooo" target="_blank"><i class="uil uil-github-alt" ></i></a></i></div>            
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">mame touty</a> - All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
+</body>
+</html>

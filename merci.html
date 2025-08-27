@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci pour votre message</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+        :root {
+            --body-color: rgb(250, 250, 250);
+            --color-white: rgb(255, 255, 255);
+            --text-color-second: rgb(68, 68, 68);
+            --text-color-third: rgb(30, 159, 171);
+            --first-color: rgb(110, 87, 224);
+            --first-color-hover: rgb(40, 91, 212);
+            --second-color: rgb(0, 201, 255);
+            --third-color: rgb(192, 166, 49);
+            --first-shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background: var(--body-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.5s ease;
+        }
+        
+        .thank-you-container {
+            background: var(--color-white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--first-shadow-color);
+            padding: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(0);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            transition: all 0.5s ease;
+        }
+        
+        .checkmark {
+            color: var(--second-color);
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            animation: bounceIn 0.8s ease-out;
+        }
+        
+        h1 {
+            color: var(--text-color-second);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        p {
+            color: var(--text-color-second);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .btn-return {
+            background: var(--second-color);
+            color: var(--color-white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 201, 255, 0.3);
+        }
+        
+        .btn-return:hover {
+            background: var(--first-color-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        /* Dark mode styles */
+        body.dark-mode {
+            --body-color: #121212;
+            --color-white: #1e1e1e;
+            --text-color-second: #e0e0e0;
+            --text-color-third: #4db8ff;
+            --first-shadow-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .dark-mode .thank-you-container {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thank-you-container">
+            <div class="checkmark">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1 class="display-4">Message envoyé avec succès !</h1>
+            <p class="lead">
+                Merci pour votre message. Nous avons bien reçu votre demande et y répondrons dans les plus brefs délais.
+            </p>
+            <p>
+                <small class="text-muted">
+                    A la prochaine 👋🏾 !
+                </small>
+            </p>
+            <a href="index.html" class="btn btn-return">
+                <i class="uil uil-arrow-left me-2"></i>Retour à l'accueil
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>
