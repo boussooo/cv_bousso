@@ -10,7 +10,7 @@ function myMenuFunction() {
 }
 
 function downloadCV() {
-  const cvUrl = 'CV_Mame_Touty_Bousso.pdf';
+  const cvUrl = 'CV-BOUSSO.pdf';
   
   const link = document.createElement('a');
   link.href = cvUrl;
